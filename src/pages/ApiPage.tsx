@@ -303,4 +303,44 @@ formData.append('quality', '0.8');
                   </li>
                   <li className="flex items-center gap-2">
                     <Check size={16} className="text-green-500" />
-                    <span>Max 50
+                    <span>Max 50MB per image</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check size={16} className="text-green-500" />
+                    <span>Premium quality</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check size={16} className="text-green-500" />
+                    <span>Priority processing</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check size={16} className="text-green-500" />
+                    <span>Dedicated support</span>
+                  </li>
+                </ul>
+                <button className="w-full btn btn-outline">Contact Sales</button>
+              </div>
+            </div>
+            
+            <div className="bg-primary-50 p-6 rounded-lg">
+              <div className="flex items-start gap-4">
+                <div className="text-primary-600">
+                  <Code size={24} />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Need a custom integration?</h3>
+                  <p className="text-gray-700 mb-4">
+                    Our team can help you integrate our background removal technology into your existing workflows and applications.
+                  </p>
+                  <button className="btn btn-primary">Contact Us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export default ApiPage;
