@@ -70,6 +70,14 @@ const Navbar: React.FC = () => {
           >
             Try It Free
           </Link>
+          <Link 
+            to="/api" 
+            className={`font-medium transition-colors ${
+              scrolled ? 'text-gray-700 hover:text-primary-600' : 'text-white hover:text-primary-200'
+            }`}
+          >
+            API
+          </Link>
         </nav>
 
         {/* Mobile menu button */}
@@ -107,6 +115,9 @@ const Navbar: React.FC = () => {
             </Link>
             <Link to="/editor" className="btn btn-primary text-center">
               Try It Free
+            </Link>
+            <Link to="/api" className="py-2 font-medium text-gray-800 hover:text-primary-600">
+              API
             </Link>
           </div>
         </motion.div>
