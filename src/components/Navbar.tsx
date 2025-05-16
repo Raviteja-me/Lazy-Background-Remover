@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
             <Image className="w-6 h-6 text-white" />
           </div>
           <span className="text-xl font-poppins font-bold">
-            <span className={scrolled ? 'text-primary-600' : 'text-white'}>Lazy</span>
+            <span className={scrolled ? 'text-primary-600' : 'text-white'}>Lazy-BG</span>
             <span className={scrolled ? 'text-gray-800' : 'text-white'}>Remover</span>
           </span>
         </Link>

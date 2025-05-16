@@ -19,8 +19,23 @@ const HeroSection: React.FC = () => {
 
   return (
     <div className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-primary overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-radial from-primary-400/20 to-transparent"></div>
-      <div className="container relative z-10">
+      {/* Animated background image on right half, only when processed image is visible */}
+      <motion.div
+        initial={{ opacity: 0, x: 100, scale: 1 }}
+        animate={showProcessed ? { opacity: 1, x: 0, scale: 1 } : { opacity: 0, x: 100, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        className="pointer-events-none select-none absolute top-0 bottom-0 right-0 w-1/2 h-1/2 z-20 flex items-end"
+        style={{ overflow: "hidden" }}
+      >
+        <img
+          src="https://images.pexels.com/photos/2709388/pexels-photo-2709388.jpeg"
+          alt="Background animation"
+          className="w-full h-full object-cover"
+          style={{ objectPosition: "center" }}
+        />
+      </motion.div>
+      <div className="absolute inset-0 bg-gradient-radial from-primary-400/20 to-transparent z-10"></div>
+      <div className="container relative z-30">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="text-center lg:text-left lg:w-1/2 mb-12 lg:mb-0">
             <motion.div
